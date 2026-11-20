@@ -2,11 +2,40 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Quiz</title>
+    <title>Quiz Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="start" id="start-screen">
+        <h1>Welcome to the Quiz!</h1>
+        <p>Test your knowledge with this fun quiz!</p>
+        <button id="start-button">Start Quiz</button>
+      </div>
+
+      <div class="quiz-screen" id="quiz-screen">
+        <h2 class="question">Question text</h2>
+        <div class="question-marks">
+          <p>
+            Question <span class="current-question">1</span> of
+            <span class="total-questions">5</span>
+          </p>
+          <p class="score">Score: <span class="current-score">0</span></p>
+        </div>
+        <div class="choice" id="answer-container">Choices</div>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="result-screen" id="result-screen">
+        <h1>Quiz Results</h1>
+        <p class="final-score">
+          You scored <span class="final-score-value">0</span> out of
+          <span class="total-questions">5</span>
+        </p>
+        <p class="question-text">Question text</p>
+        <button id="restart-button">Restart Quiz</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
