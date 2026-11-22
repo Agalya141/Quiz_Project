@@ -55,10 +55,11 @@ body {
 .screen {
   padding: 2rem;
   text-align: center;
+  display: none;
 }
 
 .screen.active {
-  display: none;
+  display: block;
 }
 
 /* Start Screen */
@@ -301,4 +302,80 @@ body {
   background: linear-gradient(90deg, #d9ae82, #f3dec6);
   box-shadow: 0 0 12px rgba(243, 222, 198, 0.6);
   transition: width 0.4s ease;
+}
+/* Result Screen */
+
+#result-screen {
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+}
+
+#result-screen h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #fbf3ea 20%, #e0b789 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.final-score {
+  font-size: 1.1rem;
+  color: #dfd1c3;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1.5px solid rgba(232, 201, 168, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.final-score-value {
+  display: block;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #f3dec6, #d9ae82);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.result-message {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #fbf3ea;
+  margin-bottom: 2.25rem;
+}
+
+#restart-button {
+  padding: 1rem 2.8rem;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #362419;
+  background: linear-gradient(135deg, #f3dec6, #d9ae82);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(217, 174, 130, 0.35);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+#restart-button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+  box-shadow:
+    0 14px 30px rgba(217, 174, 130, 0.5),
+    0 0 25px rgba(243, 222, 198, 0.4);
+}
+
+#restart-button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(217, 174, 130, 0.3);
 }
