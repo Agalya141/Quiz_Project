@@ -379,3 +379,27 @@ body {
   transform: translateY(0);
   box-shadow: 0 5px 12px rgba(217, 174, 130, 0.3);
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  #start-screen h1,
+  #result-screen h1 {
+    font-size: 2rem;
+  }
+
+  .question {
+    font-size: 1.4rem;
+  }
+
+  .answer-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .final-score-value {
+    font-size: 3.5rem;
+  }
+}
