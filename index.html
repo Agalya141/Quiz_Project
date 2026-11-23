@@ -4,35 +4,45 @@
     <meta charset="UTF-8" />
     <title>Quiz Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="start" id="start-screen">
-        <h1>Welcome to the Quiz!</h1>
+      <div class="screen active" id="start-screen">
+        <h1>Quiz Time! <span class="emoji">💡</span></h1>
         <p>Test your knowledge with this fun quiz!</p>
         <button id="start-button">Start Quiz</button>
       </div>
 
-      <div class="quiz-screen" id="quiz-screen">
-        <h2 class="question">Question text</h2>
+      <div class="quiz-screen screen" id="quiz-screen">
+        <h2 class="question" id="question">Question text</h2>
         <div class="question-marks">
           <p>
-            Question <span class="current-question">1</span> of
-            <span class="total-questions">5</span>
+            Question <span id="current-question">1</span> of
+            <span id="total-questions">5</span>
           </p>
-          <p class="score">Score: <span class="current-score">0</span></p>
+          <p id="score">Score: <span id="current-score">0</span></p>
         </div>
         <div class="choice" id="answer-container">Choices</div>
-        <div class="progress-bar"></div>
+        <div id="progress-bar"><div class="progress"></div></div>
       </div>
-      <div class="result-screen" id="result-screen">
+
+      <div class="result-screen screen" id="result-screen">
         <h1>Quiz Results</h1>
         <p class="final-score">
-          You scored <span class="final-score-value">0</span> out of
-          <span class="total-questions">5</span>
+          You scored <span id="final-score-value">0</span> out of
+          <span id="max-score-value">5</span>
         </p>
-        <p class="question-text">Question text</p>
+        <p class="result-message" id="result-message">Question text</p>
         <button id="restart-button">Restart Quiz</button>
       </div>
     </div>
