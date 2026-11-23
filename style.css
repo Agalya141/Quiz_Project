@@ -264,7 +264,7 @@ body {
 }
 
 .answer-btn:disabled {
-  cursor: not-allowed;
+  cursor: default;
 }
 
 @keyframes pop {
