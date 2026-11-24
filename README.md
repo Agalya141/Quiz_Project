@@ -2,7 +2,7 @@
 
 A JavaScript quiz game with a start screen, five questions and a result screen. Built with plain HTML, CSS and JavaScript.
 
-**Live demo:** _add your GitHub Pages link here_
+**Live demo:** [https://agalya141.github.io/Quiz_Project/](https://agalya141.github.io/Quiz_Project/)
 
 ## Features
 
@@ -33,7 +33,7 @@ A JavaScript quiz game with a start screen, five questions and a result screen. 
 
 1. Clone the repository
    ```
-   git clone https://github.com/Agalya141/<your-repo-name>.git
+   git clone https://github.com/Agalya141/Quiz_Project.git
    ```
 2. Open the folder
 3. Open `index.html` in your browser
@@ -48,7 +48,7 @@ A JavaScript quiz game with a start screen, five questions and a result screen. 
 
 ## Future Improvements
 
-- Smooth progress bar animation
+- Working progress bar
 - More questions and categories
 - Timer for each question
 - High score saved in localStorage
